@@ -9,9 +9,9 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class NaviItem(val title: String, val icon: ImageVector, val route: String) {
-    data object Conversation : NaviItem("对话", Icons.AutoMirrored.Filled.Chat, "Conversation")
-    data object AIAgent : NaviItem("智能体", Icons.Default.Search, "AIAgent")
-    data object Creation : NaviItem("创作", Icons.Default.Create, "Creation")
-    data object Notification : NaviItem("通知", Icons.Default.Notifications, "Notification")
-    data object Me : NaviItem("我的", Icons.Default.Person, "Me")
+    data object Conversation : NaviItem("Chat", Icons.AutoMirrored.Filled.Chat, "Chat")
+    data object AIAgent : NaviItem("Agent", Icons.Default.Search, "Agent")
+    data object Creation : NaviItem("Creation", Icons.Default.Create, "Creation")
+    data object Notification : NaviItem("Notice", Icons.Default.Notifications, "Notice")
+    data object Me : NaviItem("Me", Icons.Default.Person, "Me")
 }
