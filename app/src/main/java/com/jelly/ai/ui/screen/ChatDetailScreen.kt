@@ -42,7 +42,6 @@ fun ChatDetailScreen(
     navController: androidx.navigation.NavController,
     chatId: String?
 ) {
-    // 此处可根据 chatId 加载数据，此处使用模拟数据
     val messages = mutableListOf(
         ChatMessage(
             text = "快来试试",

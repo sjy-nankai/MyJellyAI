@@ -51,7 +51,6 @@ import com.jelly.ai.ui.data.AIAgentItem
 fun AIAgentScreen(
     paddingValues: PaddingValues,
 ) {
-// Tab 标题列表
     val tabs = listOf("推荐", "精选", "拍照问", "学习", "品牌专区")
     var selectedTabIndex by remember { mutableStateOf(0) }
 
