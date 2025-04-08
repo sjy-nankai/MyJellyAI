@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.lazy.LazyColumn
@@ -54,6 +56,7 @@ fun ChatDetailScreen(
     )
 
     Scaffold(
+        modifier = Modifier.imePadding(),
         topBar = {
             TopAppBar(
                 title = { Text(text = "豆包") },
@@ -71,12 +74,12 @@ fun ChatDetailScreen(
         },
         bottomBar = {
             Column {
-            BottomToolBar()
-            ChatBottomInputBar(
-                onSend = { content ->
-                    messages.add(ChatMessage(text = content, fromSelf = true))
-                }
-            )
+                BottomToolBar()
+                ChatBottomInputBar(
+                    onSend = { content ->
+                        messages.add(ChatMessage(text = content, fromSelf = true))
+                    }
+                )
             }
         }
     ) { innerPadding ->
