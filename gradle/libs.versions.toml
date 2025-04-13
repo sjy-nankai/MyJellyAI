@@ -1,5 +1,7 @@
 [versions]
+
 agp = "8.9.0"
+constraintlayoutCompose = "1.1.1"
 kotlin = "2.0.21"
 coreKtx = "1.10.1"
 junit = "4.13.2"
@@ -18,8 +20,10 @@ coroutines_version = "1.9.0"
 appcompat = "1.7.0"
 material = "1.12.0"
 kotest = "5.9.1"
+accompanistPager = "0.36.0"
 
 [libraries]
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -55,6 +59,9 @@ kotest-junit = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotes
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-framework-engine = { module = "io.kotest:kotest-framework-engine", version.ref = "kotest" }
 kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanistPager" }
+accompanist-pager-indicators = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "accompanistPager" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
