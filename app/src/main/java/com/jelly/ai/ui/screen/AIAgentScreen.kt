@@ -59,7 +59,7 @@ fun AIAgentScreen(
         AIAgentItem(
             name = "编程助理",
             label = "官方",
-            description = "经验丰富的工程师，擅长帮助用户解决编程问题并拓展思路\nby @豆包官方"
+            description = "经验丰富的工程师，擅长帮助用户解决编程问题并拓展思路\nby @Jelly官方"
         ),
         AIAgentItem(
             name = "白鹿",

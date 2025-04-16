@@ -16,6 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jelly.ai.ui.component.AudioVisualizerAndRecorder
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -45,6 +46,8 @@ fun MeScreen(
                 .padding(innerPadding),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
+            AudioVisualizerAndRecorder()
             Spacer(modifier = Modifier.height(24.dp))
             Box(
                 modifier = Modifier
@@ -75,7 +78,7 @@ fun MeScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            val tabs = listOf("Works", "Private", "AI Persona", "Favorites")
+            val tabs = listOf("Works", "Private", "Jelly Persona", "Favorites")
             TabRow(
                 selectedTabIndex = selectedTabIndex
             ) {
@@ -91,12 +94,12 @@ fun MeScreen(
             if (selectedTabIndex == 2) {
                 Spacer(modifier = Modifier.height(48.dp))
                 Text(
-                    text = "Click to create your first AI persona",
+                    text = "Click to create your first Jelly persona",
                     fontSize = 16.sp,
                     color = Color.Gray
                 )
                 Spacer(modifier = Modifier.height(12.dp))
-                Button(onClick = { /* TODO: Create AI persona */ }) {
+                Button(onClick = { /* TODO: Create Jelly persona */ }) {
                     Text(text = "Create Now")
                 }
             } else {

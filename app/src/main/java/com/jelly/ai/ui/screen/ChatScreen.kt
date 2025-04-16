@@ -111,8 +111,8 @@ fun ConversationScreen(
             item {
                 ConversationItem(
                     avatarRes = null, // 替换成你自己的头像资源或网络图片
-                    title = "豆包",
-                    subTitle = "用 AI 生图，一键打开",
+                    title = "Jelly",
+                    subTitle = "用 Jelly 生图，一键打开",
                     modifier = Modifier.clickable {
                         navigationController.navigate("chat_detail")
                     }
@@ -121,14 +121,14 @@ fun ConversationScreen(
             item {
                 ConversationItem(
                     avatarRes = null,
-                    title = "豆包开发者百科",
-                    subTitle = "关于豆包云百科的使用指南"
+                    title = "Jelly开发者百科",
+                    subTitle = "关于Jelly云百科的使用指南"
                 )
             }
             item {
                 ConversationItem(
                     avatarRes = null,
-                    title = "AI 图片生成",
+                    title = "Jelly 图片生成",
                     subTitle = "抱歉，我无法生成你要求的图片"
                 )
             }

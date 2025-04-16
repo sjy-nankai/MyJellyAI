@@ -59,7 +59,7 @@ fun ChatDetailScreen(
         modifier = Modifier.imePadding(),
         topBar = {
             TopAppBar(
-                title = { Text(text = "豆包") },
+                title = { Text(text = "Jelly") },
                 navigationIcon = {
                     IconButton(onClick = { navController.navigateUp() }) {
                         Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "返回")
