@@ -1,1 +1,1 @@
-# MyJellyAI
+# MyJelly
